@@ -18,7 +18,7 @@ class VcfCli < Formula
 
   $os = "darwin"
 
-  url "https://packages.broadcom.com/artifactory/vcf-cli/#{os}/#{arch}/v#{version}/vcf-cli.tar.gz"
+  url "https://packages.broadcom.com/artifactory/vcf-cli/darwin/#{arch}/v#{version}/vcf-cli.tar.gz"
   sha256 checksums["#{$os}-#{$arch}"]
 
   def install
