@@ -11,15 +11,15 @@ class VcfCli < Formula
     "darwin-arm64" => "d9ec62a8e774ab42bc68182177b48c54fe653226fc796bbfe92e3cf013992f59",
   }
 
-  $arch = "arm64"
+  arch = "arm64"
   on_intel do
-    $arch = "amd64"
+    arch = "amd64"
   end
 
-  $os = "darwin"
+  os = "darwin"
 
-  url "https://packages.broadcom.com/artifactory/vcf-cli/darwin/#{arch}/v#{version}/vcf-cli.tar.gz"
-  sha256 checksums["#{$os}-#{$arch}"]
+  url "https://packages.broadcom.com/artifactory/vcf-cli/#{os}/#{arch}/v#{version}/vcf-cli.tar.gz"
+  sha256 checksums["#{os}-#{arch}"]
 
   def install
     # Install the VCF CLI
