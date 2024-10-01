@@ -8,7 +8,7 @@ class VcfCli < Formula
 
   checksums = {
     "darwin-amd64" => "811669f852ab5e760745cc1e7432f0b5e47b579d414e14d529a93d14060f7425",
-    "darwin-arm64" => "d9ec62a8e774ab42bc68182177b48c54fe653226fc796bbfe92e3cf013992f59",
+    "darwin-arm64" => "25b715db809a024cc6663dc5b8841dd4b23aa0b0a1a73fbc92ea3fdfac3972e6",
   }
 
   arch = "arm64"
