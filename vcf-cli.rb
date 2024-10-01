@@ -4,7 +4,7 @@
 class VcfCli < Formula
   desc "VCF command-line tool"
   homepage "https://github.com/vmware/homebrew-vcfcli"
-  version "1.0.0"
+  version "1.1.0"
 
   checksums = {
     "darwin-amd64" => "811669f852ab5e760745cc1e7432f0b5e47b579d414e14d529a93d14060f7425",
