@@ -7,8 +7,8 @@ class VcfCli < Formula
   version "1.1.0"
 
   checksums = {
-    "darwin-amd64" => "811669f852ab5e760745cc1e7432f0b5e47b579d414e14d529a93d14060f7425",
-    "darwin-arm64" => "25b715db809a024cc6663dc5b8841dd4b23aa0b0a1a73fbc92ea3fdfac3972e6",
+    "darwin-amd64" => "4b9b9875a80bc576c461b8d173d69b2e2f65abe2b8fe1074fff9e61958840b71",
+    "darwin-arm64" => "5484d8f5d8350129e80d89639a4e23423857151633a1fc66f4f9680a26c395bf",
   }
 
   arch = "arm64"
@@ -23,8 +23,7 @@ class VcfCli < Formula
 
   def install
     # Install the VCF CLI
-    bin.install "vcf-cli" => "vcf"
-
+    bin.install "vcf-cli-#{os}_#{arch}" => "vcf"
   end
 
   # This verifies the installation
