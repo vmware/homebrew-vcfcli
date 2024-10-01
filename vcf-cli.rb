@@ -25,15 +25,6 @@ class VcfCli < Formula
     # Install the VCF CLI
     bin.install "vcf-cli" => "vcf"
 
-    # Setup shell completion
-    output = Utils.safe_popen_read(bin/"vcf", "completion", "bash")
-    (bash_completion/"vcf").write output
-
-    output = Utils.safe_popen_read(bin/"vcf", "completion", "zsh")
-    (zsh_completion/"_vcf").write output
-
-    output = Utils.safe_popen_read(bin/"vcf", "completion", "fish")
-    (fish_completion/"vcf.fish").write output
   end
 
   # This verifies the installation
